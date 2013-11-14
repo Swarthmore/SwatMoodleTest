@@ -43,7 +43,7 @@ casper.back();
 
 casper.thenClick({
         type: 'xpath',
-        path: "//a/span[contains(text(),'Test Text File')]/.."
+        path: "//a/span[contains(text(),'Test Text File')][1]"
     }, function() {
 	this.echo(this.getTitle());
 });
